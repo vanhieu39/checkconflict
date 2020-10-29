@@ -57,7 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 			.authorizeRequests()
-			.antMatchers("/", "/favicon.ico", "/css/**", "/js/**", "/images/**", "/img/**", "/fonts/**", "/statics/**", "/api/v1/**/viewJPG/**",  "/api/v1/**/viewJPEG/**",  "/api/v1/**/viewPNG/**", "/api/v1/**/viewGIF/**").permitAll()
+			.antMatchers("/", "/aipalm/**","/favicon.ico", "/css/**", "/js/**", "/images/**", "/img/**", "/fonts/**", "/statics/**", "/api/v1/**/viewJPG/**",  "/api/v1/**/viewJPEG/**",  "/api/v1/**/viewPNG/**", "/api/v1/**/viewGIF/**").permitAll()
             .antMatchers("/v2/**").permitAll()
             .antMatchers("/v3/**").permitAll()
             .antMatchers("/h2/**").permitAll()
